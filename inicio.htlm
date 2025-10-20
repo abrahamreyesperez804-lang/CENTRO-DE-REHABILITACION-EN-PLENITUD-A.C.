@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EN PLENITUD - Centro de Rehabilitación</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: Arial, sans-serif; 
+            background: #f0f8ff;
+            max-width: 100%;
+            overflow-x: hidden;
+            padding-bottom: 20px;
+        }
+        
+        .header {
+            background: #1e40af;
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+        
+        .tagline {
+            font-size: 14px;
+            opacity: 0.8;
+            font-style: italic;
+        }
+        
+        .card {
+            background: white;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .quote-card {
+            background: #3b82f6;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1e40af;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .button {
+            background: #2563eb;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 10px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+            border: none;
+            width: 100%;
+            font-size: 16px;
+        }
+        
+        .whatsapp {
+            background: #22c55e;
+        }
+        
+        .address {
+            text-align: center;
+            color: #4b5563;
+            margin-bottom: 5px;
+            line-height: 1.5;
+        }
+        
+        .motto {
+            text-align: center;
+            color: #6b7280;
+            font-style: italic;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        
+        .list-item {
+            margin-bottom: 8px;
+            padding: 8px 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        
+        .tab-container {
+            display: flex;
+            background: #1e40af;
+            overflow-x: auto;
+            padding: 0 10px;
+        }
+        
+        .tab {
+            padding: 12px 16px;
+            color: white;
+            text-decoration: none;
+            white-space: nowrap;
+            border-bottom: 3px solid transparent;
+        }
+        
+        .tab.active {
+            border-bottom-color: white;
+            font-weight: bold;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .login-input {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        
+        .interno-card {
+            background: white;
+            margin: 10px 15px;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #1e40af;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">🏥 EN PLENITUD</div>
+        <div class="subtitle">CENTRO DE REHABILITACIÓN A.C.</div>
+        <div class="tagline">Restauración y Vida en Plenitud</div>
+    </div>
+
+    <!-- Pestañas de Navegación -->
+    <div class="tab-container">
+        <a href="#inicio" class="tab active" onclick="showTab('inicio')">Inicio</a>
+        <a href="#metodo" class="tab" onclick="showTab('metodo')">Método</a>
+        <a href="#internamiento" class="tab" onclick="showTab('internamiento')">Internamiento</a>
+        <a href="#familias" class="tab" onclick="showTab('familias')">Familias</a>
+    </div>
+
+    <!-- CONTENIDO DE PESTAÑAS -->
+
+    <!-- Pestaña INICIO -->
+    <div id="inicio" class="tab-content active">
+        <div class="quote-card">
+            "Lo que evades te controla... lo que enfrentas te libera"
+        </div>
+
+        <div class="card">
+            <div class="card-title">📞 CONTACTO INMEDIATO</div>
+            
+            <a href="tel:2721384183" class="button">
+                📞 Llamar: 272-138-4183
+            </a>
+
+            <a href="tel:2285125647" class="button">
+                📞 Llamar: 228-512-5647
+            </a>
+
+            <a href="https://wa.me/522721384183" class="button whatsapp">
+                💬 WhatsApp: 272-138-4183
+            </a>
+        </div>
+
+        <div class="card">
+            <div class="card-title">📍 UBICACIÓN</div>
+            <div class="address">Privada Piedad Perez Ortiz #4, Colonia Ejidal</div>
+            <div class="address">Mariano Escobedo, Orizaba, Ver.</div>
+            <div class="motto">"El dolor es temporal, la transformación es para siempre"</div>
+        </div>
+    </div>
+
+    <!-- Pestaña MÉTODO -->
+    <div id="metodo" class="tab-content">
+        <div class="card">
+            <div class="card-title">🏛️ MÉTODO EN PLENITUD</div>
+            <div class="list-item">🧠 Coaching Transformacional con PNL</div>
+            <div class="list-item">👥 Psicología Individual y Grupal</div>
+            <div class="list-item">🔄 Programa 12 Pasos AA</div>
+            <div class="list-item">💪 Entrenamiento Físico Integral</div>
+            <div class="list-item">✨ Desarrollo Espiritual</div>
+            <div class="list-item">🌊 Desintoxicación Iónica</div>
+            <div class="list-item">🏥 Atención Médica Psicológica</div>
+            <div class="list-item">🎬 Reflexión Audiovisual</div>
+            <div class="list-item">🤝 Consejería en Adicciones</div>
+        </div>
+    </div>
+
+    <!-- Pestaña INTERNAMIENTO -->
+    <div id="internamiento" class="tab-content">
+        <div class="card">
+            <div class="card-title">🏠 INTERNAMIENTO RESIDENCIAL</div>
+            <div class="list-item">🛏️ Habitaciones Privadas</div>
+            <div class="list-item">🍽️ Alimentación Completa</div>
+            <div class="list-item">🎯 Plan de Vida</div>
+            <div class="list-item">💼 Coaching Empresarial</div>
+            <div class="list-item">👨‍👩‍👧‍👦 Asesoría Familiar</div>
+            <div class="list-item">👥 Espacios Comunes</div>
+        </div>
+    </div>
+
+    <!-- Pestaña FAMILIAS -->
+    <div id="familias" class="tab-content">
+        <div class="card">
+            <div class="card-title">👨‍👩‍👧‍👦 ÁREA PARA FAMILIAS</div>
+            <div style="text-align: center; margin-bottom: 15px; color: #4b5563;">
+                Acceso exclusivo para familiares de internos
+            </div>
+            
+            <input type="text" class="login-input" placeholder="Usuario" id="usuario">
+            <input type="password" class="login-input" placeholder="Contraseña" id="password">
+            
+            <button class="button" onclick="login()">Acceder al Sistema</button>
+            
+            <div style="text-align: center; margin-top: 15px; color: #6b7280; font-size: 14px;">
+                Usuario demo: <strong>familia</strong><br>
+                Contraseña demo: <strong>plenitud2024</strong>
+            </div>
+        </div>
+
+        <!-- Lista de internos (se muestra después del login) -->
+        <div id="lista-internos" style="display: none;">
+            <div class="card">
+                <div class="card-title">👥 TUS FAMILIARES EN EL CENTRO</div>
+                
+                <div class="interno-card">
+                    <strong>Gustavo Marcelo Páez</strong><br>
+                    <small>Ingreso: 06/Nov/2024</small>
+                </div>
+                
+                <div class="interno-card">
+                    <strong>Carlos Ernesto Marroquín Flores</strong><br>
+                    <small>Ingreso: 18/Feb/2025</small>
+                </div>
+                
+                <div class="interno-card">
+                    <strong>Oscar Flores Pérez</strong><br>
+                    <small>Ingreso: 22/Mar/2025</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Navegación por pestañas
+        function showTab(tabName) {
+            // Ocultar todo el contenido
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Mostrar la pestaña seleccionada
+            document.getElementById(tabName).classList.add('active');
+            
+            // Actualizar pestañas activas
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+
+        // Sistema de login
+        function login() {
+            const usuario = document.getElementById('usuario').value;
+            const password = document.getElementById('password').value;
+            
+            if (usuario === 'familia' && password === 'plenitud2024') {
+                document.getElementById('lista-internos').style.display = 'block';
+                alert('Acceso concedido. Bienvenido al sistema familiar.');
+            } else {
+                alert('Usuario o contraseña incorrectos. Usa: familia / plenitud2024');
+            }
+        }
+
+        // Botones de contacto
+        document.addEventListener('DOMContentLoaded', function() {
+            // Todos los botones ya funcionan con los enlaces HTML
+        });
+    </script>
+</body>
+</html>
