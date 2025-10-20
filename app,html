@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EN PLENITUD - Centro de Rehabilitación</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: Arial, sans-serif; 
+            background: #f0f8ff;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        
+        .header {
+            background: #1e40af;
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1e40af;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .button {
+            background: #2563eb;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 10px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .whatsapp {
+            background: #22c55e;
+        }
+        
+        .address {
+            text-align: center;
+            color: #4b5563;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">🏥 EN PLENITUD</div>
+        <div class="subtitle">Centro de Rehabilitación A.C.</div>
+        <div class="subtitle">Restauración y Vida en Plenitud</div>
+    </div>
+
+    <div class="card" style="background: #3b82f6; color: white;">
+        <div style="text-align: center; font-weight: bold; font-size: 18px;">
+            "Lo que evades te controla... lo que enfrentas te libera"
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">📞 CONTACTO INMEDIATO</div>
+        
+        <a href="tel:2721384183" class="button">
+            📞 Llamar: 272-138-4183
+        </a>
+
+        <a href="tel:2285125647" class="button">
+            📞 Llamar: 228-512-5647
+        </a>
+
+        <a href="https://wa.me/522721384183" class="button whatsapp">
+            💬 WhatsApp: 272-138-4183
+        </a>
+    </div>
+
+    <div class="card">
+        <div class="card-title">📍 UBICACIÓN</div>
+        <div class="address">Privada Piedad Perez Ortiz #4, Colonia Ejidal</div>
+        <div class="address">Mariano Escobedo, Orizaba, Ver.</div>
+        <div style="text-align: center; color: #6b7280; font-style: italic; margin-top: 10px;">
+            "El dolor es temporal, la transformación es para siempre"
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">🏛️ MÉTODO EN PLENITUD</div>
+        <div>• 🧠 Coaching Transformacional</div>
+        <div>• 👥 Psicología Individual</div>
+        <div>• 🔄 Programa 12 Pasos</div>
+        <div>• 💪 Entrenamiento Físico</div>
+        <div>• ✨ Desarrollo Espiritual</div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">👨‍👩‍👧‍👦 ÁREA FAMILIAS</div>
+        <div style="text-align: center; color: #4b5563;">
+            Usuario: <strong>familia</strong><br>
+            Contraseña: <strong>plenitud2024</strong>
+        </div>
+    </div>
+</body>
+</html>
