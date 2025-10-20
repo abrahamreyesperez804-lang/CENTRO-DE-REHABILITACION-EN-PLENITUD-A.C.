@@ -77,3 +77,4 @@ npm install
 
 # Ejecutar en desarrollo
 npx expo start
+
